@@ -16,6 +16,7 @@ resources:
 frigateConfig:
   imageSelector: image
   mountUSBBus: false
+  mountM2Coral: false
   additionalEnvs: []
 
 frigateNetwork:
