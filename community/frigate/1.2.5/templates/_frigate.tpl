@@ -34,6 +34,11 @@ workload:
               value: {{ $env.value }}
             {{ end }}
           {{ end }}
+          {{- if .Values.frigateConfig.mountM2Coral }}
+          devices:
+            - name: apex_0
+              path: /dev/apex_0
+          {{- end }}
           probes:
             liveness:
               enabled: true
